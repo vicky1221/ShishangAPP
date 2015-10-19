@@ -21,6 +21,8 @@
 		98C810861BBE450D0017AD0D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C810851BBE450D0017AD0D /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98C810891BBE45B00017AD0D /* KBaseViewController+ShowLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C810881BBE45B00017AD0D /* KBaseViewController+ShowLogin.m */; settings = {ASSET_TAGS = (); }; };
 		98C8108D1BBE46690017AD0D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8108C1BBE46690017AD0D /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		98E532E91BD137E20018C98E /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E532E81BD137E20018C98E /* iToast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		98E532EC1BD4D9E80018C98E /* RegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E532EB1BD4D9E80018C98E /* RegisterViewController2.m */; settings = {ASSET_TAGS = (); }; };
 		98F602271BC77198000C5410 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F602261BC77198000C5410 /* LoginRequest.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		98C810881BBE45B00017AD0D /* KBaseViewController+ShowLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBaseViewController+ShowLogin.m"; sourceTree = "<group>"; };
 		98C8108B1BBE46690017AD0D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		98C8108C1BBE46690017AD0D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		98E532E71BD137E20018C98E /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		98E532E81BD137E20018C98E /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		98E532EA1BD4D9E80018C98E /* RegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController2.h; sourceTree = "<group>"; };
+		98E532EB1BD4D9E80018C98E /* RegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController2.m; sourceTree = "<group>"; };
 		98F602251BC77198000C5410 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
 		98F602261BC77198000C5410 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		B3C1EDC90022597837B00217 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		983A58941BBBA6A600D1F9F5 /* ShiShangLife */ = {
 			isa = PBXGroup;
 			children = (
+				98E532E31BD135450018C98E /* Utils */,
 				98BF36291BBBF1320005C284 /* Model */,
 				987C44571BBBE03B00A14533 /* ViewController */,
 				983A58981BBBA6A600D1F9F5 /* AppDelegate.h */,
@@ -199,6 +206,8 @@
 				98C810821BBE44D10017AD0D /* ForgetPWDViewController.m */,
 				98C810841BBE450D0017AD0D /* RegisterViewController.h */,
 				98C810851BBE450D0017AD0D /* RegisterViewController.m */,
+				98E532EA1BD4D9E80018C98E /* RegisterViewController2.h */,
+				98E532EB1BD4D9E80018C98E /* RegisterViewController2.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -210,6 +219,15 @@
 				98C8108C1BBE46690017AD0D /* HomeViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		98E532E31BD135450018C98E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98E532E71BD137E20018C98E /* iToast.h */,
+				98E532E81BD137E20018C98E /* iToast.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DBF3AA3F37FC44BEF74610BE /* Frameworks */ = {
@@ -361,8 +379,10 @@
 				983A58971BBBA6A600D1F9F5 /* main.m in Sources */,
 				98C810891BBE45B00017AD0D /* KBaseViewController+ShowLogin.m in Sources */,
 				98C8108D1BBE46690017AD0D /* HomeViewController.m in Sources */,
+				98E532EC1BD4D9E80018C98E /* RegisterViewController2.m in Sources */,
 				98C810861BBE450D0017AD0D /* RegisterViewController.m in Sources */,
 				98C810801BBE447D0017AD0D /* LoginViewController.m in Sources */,
+				98E532E91BD137E20018C98E /* iToast.m in Sources */,
 				98C810831BBE44D10017AD0D /* ForgetPWDViewController.m in Sources */,
 				98F602271BC77198000C5410 /* LoginRequest.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "KBaseViewController.h"
+#import "DTInit.h"
 
 @interface KBaseViewController ()
 
@@ -16,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = rgb_color(239, 240, 235, 1);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:255.0/255.0 green:51.0/255.0 blue:102.0/255.0 alpha:1];
+//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:255.0/255.0 green:51.0/255.0 blue:102.0/255.0 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning {

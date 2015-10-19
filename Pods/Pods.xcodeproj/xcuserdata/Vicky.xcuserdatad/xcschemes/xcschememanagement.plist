@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MD5Digest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53FE0B93E3D9EDC95845C2F276E02DB2</key>
+		<key>43BA651F9AEC8E63CFEAB33176836C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96E00463841E73493CA482A1DF5EDF74</key>
+		<key>6E5343893CEFA3FAB797A3012195B96C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9D7423C63B91DC3175A707256B3B49DB</key>
+		<key>7C553CD1610D7E286D28ABD3EE9C5BDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95279C19B5218CA9FB28626DA9A91D32</key>
 		<dict>
 			<key>primary</key>
 			<true/>

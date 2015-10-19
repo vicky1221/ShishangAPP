@@ -13,11 +13,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showLoginVC];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self showLoginVC];
 }
 
 @end

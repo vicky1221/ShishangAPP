@@ -90,14 +90,21 @@ static int doregister;
 }
 
 -(void)getFinished:(NSDictionary *)msg tag:(int *)tag {
-    
+    if ([msg[@"error"] integerValue] == 0) {
+        if (tag == &dologin) {
+            // 保存用户信息
+        }
+        _complete();
+    } else {
+        _failed(msg[@"error"], msg[@"msg"]);
+    }
 }
 
 /**
  请求失败时-调用
  */
 -(void)getError:(NSDictionary *)msg tag:(int *)tag {
-    
+    _failed(msg[@"error"], @"网络访问错误");
 }
 
 @end

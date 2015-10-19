@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DTInit.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,26 @@
 
 @implementation AppDelegate
 
+- (void)setupTabbarItems {
+    NSArray *originImageArray = @[@"icon_home", @"icon_rss", @"icon_group", @"icon_profile"];
+    NSArray *selectImageArray = @[@"icon_home-s", @"icon_rss-s", @"icon_group-s", @"icon_profile-s"];
+    for (int i = 0; i < self.tabbarController.tabBar.items.count; i++) {
+        UITabBarItem *item = self.tabbarController.tabBar.items[i];
+        [item setFinishedSelectedImage:[UIImage imageNamed:selectImageArray[i]] withFinishedUnselectedImage:[UIImage imageNamed:originImageArray[i]]];
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                      rgb_color(128, 128, 128, 1), NSForegroundColorAttributeName, nil]
+                            forState:UIControlStateNormal];
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                      rgb_color(255, 51, 102, 1), NSForegroundColorAttributeName,
+                                      nil] forState:UIControlStateSelected];
+    }
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.tabbarController = (UITabBarController *)self.window.rootViewController;
+    [self setupTabbarItems];            // 自定义Tabbar
     return YES;
 }
 
