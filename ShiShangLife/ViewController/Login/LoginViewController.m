@@ -17,6 +17,7 @@
     
     IBOutlet UIButton *registerButton;
     IBOutlet UIButton *forgetPWDButton;
+    BOOL isShowPWD;
 }
 
 @end
@@ -42,6 +43,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)customButton {
+    NSString *registerStr = @"没有账号？现在注册";
+    NSMutableAttributedString *registerAttributString = [[NSMutableAttributedString alloc] initWithString:registerStr];
+    [registerAttributString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(registerStr.length - 2, 2)];
+    [registerAttributString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(registerStr.length - 2, 2)];
+    [registerButton setTitle:registerStr forState:UIControlStateNormal];
+    registerButton.titleLabel.attributedText = registerAttributString;
+    
+    NSAttributedString *forgetPWDAttribute = [[NSAttributedString alloc] initWithString:@"忘记密码" attributes:@{NSUnderlineStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]}];
+    forgetPWDButton.titleLabel.attributedText = forgetPWDAttribute;
+}
+
 #pragma mark - IBAction
 - (IBAction)enterHomeScreen:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
@@ -58,10 +71,16 @@
         return;
     }
     [[LoginRequest singleton] doLogin:@{@"user":userNameTextField.text, @"password":passwordTextField.text} complete:^{
-        
+        [self dismissViewControllerAnimated:YES completion:^{
+        }];
     } failded:^(NSString *state, NSString *errmsg) {
-        
+        [[iToast makeText:errmsg] show];
     }];
+}
+
+- (IBAction)showPassword:(id)sender {
+    isShowPWD = !isShowPWD;
+    passwordTextField.secureTextEntry = isShowPWD;
 }
 /*
 #pragma mark - Navigation

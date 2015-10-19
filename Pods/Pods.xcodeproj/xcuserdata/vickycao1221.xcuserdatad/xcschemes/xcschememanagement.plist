@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>MD5Digest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,7 +27,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>43BA651F9AEC8E63CFEAB33176836C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53FE0B93E3D9EDC95845C2F276E02DB2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E5343893CEFA3FAB797A3012195B96C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C553CD1610D7E286D28ABD3EE9C5BDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95279C19B5218CA9FB28626DA9A91D32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
