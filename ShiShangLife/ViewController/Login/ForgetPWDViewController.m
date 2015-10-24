@@ -13,6 +13,8 @@
 @interface ForgetPWDViewController () {
     IBOutlet UITextField *phoneNumberTextField;
     IBOutlet UITextField *codeTextField;
+    IBOutlet UITextField *passwordTextField;
+    BOOL isShowPWD;
 }
 
 @end
@@ -38,7 +40,7 @@
 
 - (IBAction)sendCode:(id)sender {
     if (phoneNumberTextField.text.length == 0) {
-        [iToast makeText:@"请输入手机号"];
+        [[iToast makeText:@"请输入手机号"] show];
         return;
     }
     [[LoginRequest singleton] sendVertifyCode:phoneNumberTextField.text complete:^{
@@ -48,8 +50,34 @@
     }];
 }
 
+- (IBAction)showPWD:(id)sender {
+    passwordTextField.secureTextEntry = isShowPWD;
+    isShowPWD = !isShowPWD;
+}
+
 - (void)resetPWD {
-    
+    if (passwordTextField) {
+        // 说明是重置密码
+        if (passwordTextField.text.length==0) {
+            [[iToast makeText:@"请输入新密码"] show];
+            return;
+        }
+        
+        return;
+    }
+    if (phoneNumberTextField.text.length == 0) {
+        [[iToast makeText:@"请输入手机号"] show];
+        return;
+    }
+    if (codeTextField.text.length == 0) {
+        [[iToast makeText:@"请输入验证码"] show];
+        return;
+    }
+    [[LoginRequest singleton] checkVertifyCode:phoneNumberTextField.text code:codeTextField.text complete:^{
+        [self performSegueWithIdentifier:@"resetpwd" sender:self];
+    } failed:^(NSString *state, NSString *errmsg) {
+        
+    }];
 }
 
 /*
