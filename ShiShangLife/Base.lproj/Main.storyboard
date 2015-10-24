@@ -503,7 +503,7 @@
                             <constraint firstAttribute="trailing" secondItem="jUJ-2Y-nBM" secondAttribute="trailing" id="sj2-4L-idQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="注册" id="TrR-Wo-13N"/>
+                    <navigationItem key="navigationItem" id="TrR-Wo-13N"/>
                     <connections>
                         <outlet property="phoneTextField" destination="GmW-iE-nKX" id="JDW-AY-ObF"/>
                         <segue destination="NIZ-KT-fZW" kind="push" identifier="doRegister" id="SUu-CO-Nyk"/>
@@ -526,20 +526,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eiy-5K-BD7">
-<<<<<<< HEAD
-                                <rect key="frame" x="137" y="97" width="46" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="YcZ-oG-sIH"/>
-                                    <constraint firstAttribute="height" constant="30" id="sHz-bj-oB2"/>
-                                </constraints>
-                                <state key="normal" title="头像"/>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-F2-idg">
-                                <rect key="frame" x="0.0" y="194" width="320" height="53"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C12-gD-iOZ">
-=======
                                 <rect key="frame" x="137" y="121" width="46" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -552,7 +538,6 @@
                                 <rect key="frame" x="0.0" y="187" width="320" height="53"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qP-ah-dI4">
->>>>>>> 05d64c1dbd53336d6c31722310452e4b73af1e87
                                         <rect key="frame" x="10" y="12" width="300" height="30"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -560,23 +545,6 @@
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                 </subviews>
-<<<<<<< HEAD
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="C12-gD-iOZ" firstAttribute="top" secondItem="ILh-F2-idg" secondAttribute="top" constant="12" id="34Z-6n-DId"/>
-                                    <constraint firstAttribute="bottom" secondItem="C12-gD-iOZ" secondAttribute="bottom" constant="11" id="6G1-bG-pMr"/>
-                                    <constraint firstAttribute="height" constant="53" id="8nM-5t-aBO"/>
-                                    <constraint firstItem="C12-gD-iOZ" firstAttribute="leading" secondItem="ILh-F2-idg" secondAttribute="leading" constant="10" id="Grx-jH-BvD"/>
-                                    <constraint firstAttribute="trailing" secondItem="C12-gD-iOZ" secondAttribute="trailing" constant="10" id="flJ-3f-oJg"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnh-w0-eAC">
-                                <rect key="frame" x="0.0" y="255" width="320" height="53"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oh6-P3-Uli">
-                                        <rect key="frame" x="10" y="12" width="300" height="30"/>
-=======
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -647,7 +615,6 @@
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glC-7c-amY">
                                         <rect key="frame" x="10" y="12" width="302" height="30"/>
->>>>>>> 05d64c1dbd53336d6c31722310452e4b73af1e87
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -657,36 +624,6 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-<<<<<<< HEAD
-                                    <constraint firstItem="Oh6-P3-Uli" firstAttribute="top" secondItem="Fnh-w0-eAC" secondAttribute="top" constant="12" id="57N-BF-6gi"/>
-                                    <constraint firstAttribute="bottom" secondItem="Oh6-P3-Uli" secondAttribute="bottom" constant="11" id="bn8-p5-VC1"/>
-                                    <constraint firstAttribute="height" constant="53" id="h6N-lP-LT6"/>
-                                    <constraint firstItem="Oh6-P3-Uli" firstAttribute="leading" secondItem="Fnh-w0-eAC" secondAttribute="leading" constant="10" id="pGX-B5-gjE"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oh6-P3-Uli" secondAttribute="trailing" constant="10" id="qbo-co-UHb"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAU-ip-N7g">
-                                <rect key="frame" x="0.0" y="316" width="320" height="53"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdh-9K-d9e">
-                                        <rect key="frame" x="10" y="12" width="300" height="30"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Pdh-9K-d9e" secondAttribute="trailing" constant="10" id="E8r-Dr-esu"/>
-                                    <constraint firstItem="Pdh-9K-d9e" firstAttribute="leading" secondItem="cAU-ip-N7g" secondAttribute="leading" constant="10" id="EUm-qN-85H"/>
-                                    <constraint firstAttribute="height" constant="53" id="GQE-Nf-LTZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Pdh-9K-d9e" secondAttribute="bottom" constant="11" id="QJi-jp-P6Z"/>
-                                    <constraint firstItem="Pdh-9K-d9e" firstAttribute="top" secondItem="cAU-ip-N7g" secondAttribute="top" constant="12" id="t9o-WZ-E9s"/>
-                                </constraints>
-                            </view>
-=======
                                     <constraint firstItem="A56-1s-9n0" firstAttribute="leading" secondItem="YuR-gq-arj" secondAttribute="leading" id="1Nf-Cq-4GZ"/>
                                     <constraint firstItem="glC-7c-amY" firstAttribute="leading" secondItem="YuR-gq-arj" secondAttribute="leading" constant="10" id="2bk-OK-yZB"/>
                                     <constraint firstItem="glC-7c-amY" firstAttribute="top" secondItem="YuR-gq-arj" secondAttribute="top" constant="12" id="4BN-Or-UJP"/>
@@ -707,25 +644,10 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
->>>>>>> 05d64c1dbd53336d6c31722310452e4b73af1e87
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-<<<<<<< HEAD
-                            <constraint firstAttribute="trailing" secondItem="Eiy-5K-BD7" secondAttribute="trailing" constant="137" id="9hY-Jl-dWu"/>
-                            <constraint firstItem="Fnh-w0-eAC" firstAttribute="top" secondItem="ILh-F2-idg" secondAttribute="bottom" constant="8" id="CfG-3W-OUk"/>
-                            <constraint firstAttribute="trailing" secondItem="ILh-F2-idg" secondAttribute="trailing" id="Cg6-uZ-fPi"/>
-                            <constraint firstItem="Fnh-w0-eAC" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" id="H8P-9Z-cfy"/>
-                            <constraint firstAttribute="trailing" secondItem="cAU-ip-N7g" secondAttribute="trailing" id="HSa-bu-5r1"/>
-                            <constraint firstItem="cAU-ip-N7g" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" id="T0e-5y-NcF"/>
-                            <constraint firstItem="cAU-ip-N7g" firstAttribute="top" secondItem="Fnh-w0-eAC" secondAttribute="bottom" constant="8" id="c1q-X5-nZQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Fnh-w0-eAC" secondAttribute="trailing" id="cbl-AR-RSO"/>
-                            <constraint firstItem="Eiy-5K-BD7" firstAttribute="top" secondItem="y4N-aU-tJl" secondAttribute="bottom" constant="33" id="ed1-sA-vV7"/>
-                            <constraint firstItem="Eiy-5K-BD7" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" constant="137" id="hr2-OG-EfE"/>
-                            <constraint firstItem="ILh-F2-idg" firstAttribute="top" secondItem="Eiy-5K-BD7" secondAttribute="bottom" constant="67" id="wKk-Hu-0gQ"/>
-                            <constraint firstItem="ILh-F2-idg" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" id="zru-Ey-kvJ"/>
-=======
                             <constraint firstItem="ddX-DU-8ZS" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" id="5xz-o5-6re"/>
                             <constraint firstItem="9ah-dF-iFn" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" id="70L-Xs-vHJ"/>
                             <constraint firstItem="Eiy-5K-BD7" firstAttribute="leading" secondItem="aVi-QT-3sB" secondAttribute="leading" constant="137" id="Cie-JW-OSF"/>
@@ -741,10 +663,9 @@
                             <constraint firstItem="Eiy-5K-BD7" firstAttribute="top" secondItem="yYY-gl-fl4" secondAttribute="bottom" constant="27" id="qQ7-Gx-GVx"/>
                             <constraint firstAttribute="trailing" secondItem="9ah-dF-iFn" secondAttribute="trailing" id="r8s-HF-6le"/>
                             <constraint firstItem="9ah-dF-iFn" firstAttribute="top" secondItem="Eiy-5K-BD7" secondAttribute="bottom" constant="36" id="zJR-PW-8yR"/>
->>>>>>> 05d64c1dbd53336d6c31722310452e4b73af1e87
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="注册" id="yiG-sJ-pOF"/>
+                    <navigationItem key="navigationItem" id="yiG-sJ-pOF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnx-vs-BRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
