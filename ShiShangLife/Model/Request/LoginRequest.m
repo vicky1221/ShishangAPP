@@ -7,6 +7,7 @@
 //
 
 #import "LoginRequest.h"
+#import "Account.h"
 
 @implementation LoginRequest
 
@@ -77,15 +78,15 @@ static int doregister;
 /**
  *  注册
  */
-- (void)registerUser:(NSString *)phoneNum password:(NSString *)password code:(NSString *)code complete:(Complete)complete failed:(Failed)failed {
+- (void)registerUser:(NSString *)phoneNum password:(NSString *)password code:(NSString *)code userName:(NSString *)username complete:(Complete)complete failed:(Failed)failed {
     _complete = complete;
     _failed = failed;
-    NSString *uri = [NSString stringWithFormat:@"/User/CheckCode"];
+    NSString *uri = [NSString stringWithFormat:@"/User/register"];
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     dic[@"phone"] = phoneNum;
     dic[@"password"] = password;
     dic[@"code"] = code;
-    dic[@"sign"] = [[NSString stringWithFormat:@"%@%@%@%@", phoneNum, password, code, DTKEY] MD5Digest];
+    dic[@"sign"] = [[NSString stringWithFormat:@"%@%@%@%@%@", phoneNum, password, code, username, DTKEY] MD5Digest];
     [self startPost:uri params:dic tag:&doregister];
 }
 
@@ -93,6 +94,7 @@ static int doregister;
     if ([msg[@"error"] integerValue] == 0) {
         if (tag == &dologin) {
             // 保存用户信息
+            Account *account = [[Account alloc] initWithDictionary:msg[@"data"]];
         }
         _complete();
     } else {

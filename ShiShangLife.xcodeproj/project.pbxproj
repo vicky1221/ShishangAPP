@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05A31D95122F4A166B18B782 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E39A25B2EB5D9318139D48 /* libPods.a */; };
+		8927A0E01BDE7DE1006E9FF4 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 8927A0DF1BDE7DE1006E9FF4 /* Account.m */; settings = {ASSET_TAGS = (); }; };
 		983A58971BBBA6A600D1F9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 983A58961BBBA6A600D1F9F5 /* main.m */; };
 		983A589A1BBBA6A600D1F9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 983A58991BBBA6A600D1F9F5 /* AppDelegate.m */; };
 		983A58A31BBBA6A600D1F9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983A58A11BBBA6A600D1F9F5 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		21E39A25B2EB5D9318139D48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56940552C05FD0C530001186 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8927A0DE1BDE7DE1006E9FF4 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		8927A0DF1BDE7DE1006E9FF4 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		983A58921BBBA6A600D1F9F5 /* ShiShangLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiShangLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983A58961BBBA6A600D1F9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		983A58981BBBA6A600D1F9F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +103,15 @@
 				B3C1EDC90022597837B00217 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8927A0DD1BDE7DCC006E9FF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8927A0DE1BDE7DE1006E9FF4 /* Account.h */,
+				8927A0DF1BDE7DE1006E9FF4 /* Account.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		983A58891BBBA6A600D1F9F5 = {
@@ -180,6 +192,7 @@
 		98BF36291BBBF1320005C284 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8927A0DD1BDE7DCC006E9FF4 /* Model */,
 				98BF362A1BBBF1320005C284 /* Request */,
 			);
 			path = Model;
@@ -250,6 +263,7 @@
 				983A588F1BBBA6A600D1F9F5 /* Frameworks */,
 				983A58901BBBA6A600D1F9F5 /* Resources */,
 				B16C70342A3A91C8A7D7A45F /* Copy Pods Resources */,
+				8CD71F6EBA6A25247B276C94 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +365,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8CD71F6EBA6A25247B276C94 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B16C70342A3A91C8A7D7A45F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +414,7 @@
 				98E532E91BD137E20018C98E /* iToast.m in Sources */,
 				98C810831BBE44D10017AD0D /* ForgetPWDViewController.m in Sources */,
 				98F602271BC77198000C5410 /* LoginRequest.m in Sources */,
+				8927A0E01BDE7DE1006E9FF4 /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

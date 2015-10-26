@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShiShangLife/ViewController/Login/LoginViewController.m"
-            timestampString = "466965939.827539"
+            filePath = "ShiShangLife/ViewController/Login/RegisterViewController2.m"
+            timestampString = "467567642.980812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-doLogin:"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-sendRegisterInfo"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShiShangLife/ViewController/Login/LoginViewController.m"
-            timestampString = "466965939.827539"
+            filePath = "ShiShangLife/Model/Request/LoginRequest.m"
+            timestampString = "467567772.148333"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-doLogin:"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-registerUser:password:code:userName:complete:failed:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
