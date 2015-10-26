@@ -28,13 +28,12 @@
     [super viewDidLoad];
     
     self.title = @"登录";
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,40,40)];
-//    [rightButton setImage:[UIImage imageNamed:@"search.png"] forState:UIControlStateNormal];
-    [rightButton setTitle:@"登录" forState:UIControlStateNormal];
-    [rightButton addTarget:self action:@selector(doLogin:)forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem*rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
-    self.navigationItem.rightBarButtonItem= rightItem;
-    [self customButton];
+    if (userNameTextField) {
+        [self customNavigationBar];
+    } else {
+        [self customButton];
+    }
+    
     // Do any additional setup after loading the view.
 }
 
@@ -43,6 +42,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 自定义导航条
+- (void)customNavigationBar {
+    // 后退按钮
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(0, 0, 40, 40);
+    [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = backButtonItem;
+    
+    // 右边按钮
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,40,40)];
+    [rightButton setImage:[UIImage imageNamed:@"search.png"] forState:UIControlStateNormal];
+    //    [rightButton setTitle:@"登录" forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"done"] forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(doLogin:)forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem*rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationItem.rightBarButtonItem= rightItem;
+    
+}
 - (void)customButton {
     NSString *registerStr = @"没有账号？现在注册";
     NSMutableAttributedString *registerAttributString = [[NSMutableAttributedString alloc] initWithString:registerStr];
@@ -56,6 +76,9 @@
 }
 
 #pragma mark - IBAction
+- (void)back {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (IBAction)enterHomeScreen:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
     }];

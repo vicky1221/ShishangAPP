@@ -511,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxE-y3-JoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1054" y="2961"/>
+            <point key="canvasLocation" x="-914" y="2951"/>
         </scene>
         <!--完善信息-->
         <scene sceneID="3sa-KS-Uqf">
@@ -669,7 +669,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnx-vs-BRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-656" y="2904"/>
+            <point key="canvasLocation" x="-772" y="2855"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
