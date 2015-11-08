@@ -95,6 +95,7 @@ static int doregister;
         if (tag == &dologin) {
             // 保存用户信息
             Account *account = [[Account alloc] initWithDictionary:msg[@"data"]];
+            
         }
         _complete();
     } else {
